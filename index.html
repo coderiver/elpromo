@@ -5,18 +5,902 @@
 	<meta charset="utf-8">
 	<title>Template</title>
 	<meta name="viewport" content="initial-scale=1"/>
-	<link rel="stylesheet" media="screen" href="css/screen.css" >
+	<link rel="stylesheet" media="screen" href="css/screen.css">
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 	<!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
 	<script src="js/jquery.js"></script>
 	<script src="js/common.js"></script>
 </head>
 <body>
-
-<!-- BEGIN  out-->
-<div class="out">
-
+<header class="header">
+	<div class="l-center">
+		<div class="logo">Enrique Iglesias</div>
+		<nav class="nav js-nav">
+			<ul>
+				<li><button data-item="page_first">HOME</button></li>
+				<li><button data-item="page_second">TRACKS</button></li>
+				<li><button data-item="page_third">VIDEO</button></li>
+				<li><button data-item="page_fourth">LYRICS</button></li>
+				<li><button data-item="page_fifth">WALLPAPERS</button></li>                              
+				<li><button data-item="page_sixth">BUY NOW</button></li>                   
+			</ul>
+		</nav>
+	</div>
+</header>
+<div class="wrap">
+	<div id="page_first" class="page js-page" style="background-image: url(img/page1.jpg)">
+		<div class="l_center l-center_mod">
+			<div class="main">
+				<div class="title">NEW RELEASED ALBUM</div>
+				<img src="img/sex-and-love.png" alt="">
+				<ul class="links">
+					<li><a href="#">BUY NOW</a></li>
+					<li><a href="#">ITUNES</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="page_second" class="page js-page" data-type="background" data-speed="10" style="background-image: url(img/page2.jpg)">
+		<div class="l-center">
+			<div class="title">TRACKLIST</div>
+			<div class="page__in">
+				<ul class="tracklist">
+					<li><a href="#">Experiencia Religiosa</a></li>
+					<li><a href="#">Si Tú Te Vas</a></li>
+					<li><a href="#">Por Amarte</a></li>
+					<li><a href="#">Enamorado por Primera Vez</a></li>
+					<li><a href="#">Sólo en Ti</a></li>
+					<li class="is-active"><a href="#">Nunca Te Olvidaré</a></li>
+					<li><a href="#">Bailamos</a></li>
+					<li><a href="#">Ritmo Total</a></li>
+					<li><a href="#">Héroe</a></li>
+					<li><a href="#">Mentiroso</a></li>
+					<li><a href="#">Quizás</a></li>
+					<li><a href="#">Dímelo</a></li>
+					<li><a href="#">Dónde Están Corazón? [Tema Inédito]</a></li>
+					<li><a href="#">Lloro por Tí [Tema Inédito]</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="page_third" class="page js-page">
+		<div class="videos">
+			<a href="#" class="videos__item-1" style="background-image: url(img/song1.png)">
+				<div class="title">i’m a freak</div>
+			</a>
+			<a href="#" class="videos__item-2" style="background-image: url(img/song2.png)">
+				<div class="title">HEART ATTACK</div>
+			</a>
+			<a href="#" class="videos__item-3" style="background-image: url(img/song3.png)">
+				<div class="title">EL PERDEDOR</div>
+			</a>
+			<a href="#" class="videos__item-4" style="background-image: url(img/song4.png)">
+				<div class="title">LOCO</div>
+			</a>
+		</div>
+	</div>
+	<div id="page_fourth" class="page js-page" data-type="background" data-speed="20" style="background-image: url(img/page3.jpg)">
+		<div class="l-center">
+			<div class="title">LYRICS</div>
+			<div class="page__in">
+				<div class="lyrics js-lyrics">
+					<ul class="lyrics__songs">
+						<li class="is-active" data-item="lyric-1">Experiencia Religiosa</li>
+						<li data-item="lyric-2">Si Tú Te Vas</li>
+						<li data-item="lyric-3">Por Amarte</li>
+						<li data-item="lyric-4">Enamorado por Primera Vez</li>
+						<li data-item="lyric-5">Sólo en Ti</li>
+						<li data-item="lyric-6">Nunca Te Olvidaré</li>
+						<li data-item="lyric-7">Bailamos</li>
+						<li data-item="lyric-8">Ritmo Total</li>
+						<li data-item="lyric-9">Héroe</li>
+						<li data-item="lyric-10">Mentiroso</li>
+						<li data-item="lyric-11">Quizás</li>
+						<li data-item="lyric-12">Dímelo</li>
+						<li data-item="lyric-13">Dónde Están Corazón? [Tema Inédito]</li>
+						<li data-item="lyric-14">Lloro por Tí [Tema Inédito]</li>
+					</ul>
+					<div class="lyrics__text">
+						<div class="lyrics__text-in">
+							<div id="lyric-1" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V1:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-2" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-3" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V3:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-4" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V4:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-5" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V5:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-6" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V6:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-7" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V7:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-8" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V1:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-9" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V1:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-10" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V1:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-11" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V1:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-12" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V1:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-13" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V1:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+							<div id="lyric-14" class="lyrics__text-item">
+								<div class="content">
+									<p><strong>V1:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+									<br>
+									<br>
+									<p><strong>V2:</strong></p>
+									<br>
+									<br>
+									<p>Que más quieres de mí</p>
+									<p>Si he pasado esta prueba de tu amor</p>
+									<p>Y no tengo el valor</p>
+									<p>De escapar para siempre del dolor</p>
+									<br>
+									<br>
+									<p>Demasiado pedir</p>
+									<p>Que sigamos en esta hipocresía</p>
+									<p>Cuanto tiempo más podré vivir</p>
+									<p>En la misma mentira</p>
+									<br>
+									<br>
+									<p><strong>C1:</strong></p>
+									<br>
+									<br>
+									<p>No… no vayas presumiendo no</p>
+									<p>Que me has robado el corazón</p>
+									<p>Y no me queda nada más</p>
+								</div>
+								<button class="lyrics__text-up"></button>
+								<button class="lyrics__text-down"></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="page_fifth" class="page js-page" data-type="background" data-speed="50" style="background-image: url(img/page4.jpg)">
+		<div class="l-center">
+			<div class="title">WALLPAPERS</div>
+			<div class="page__in">
+				<ul class="wallpapers">
+					<li>
+						<a href="#">
+							<img src="img/wallpaper1.png" alt="">
+							<ul>
+								<li>1024 x 768</li>
+								<li>1152 x 1028</li>
+								<li>1620 x 1280</li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/wallpaper2.png" alt="">
+							<ul>
+								<li>1024 x 768</li>
+								<li>1152 x 1028</li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/wallpaper3.png" alt="">
+							<ul>
+								<li>1024 x 768</li>
+								<li>1152 x 1028</li>
+								<li>1620 x 1280</li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/wallpaper4.png" alt="">
+							<ul>
+								<li>1620 x 1280</li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/wallpaper5.png" alt="">
+							<ul>
+								<li>1024 x 768</li>
+								<li>1152 x 1028</li>
+								<li>1620 x 1280</li>
+							</ul>
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/wallpaper6.png" alt="">
+							<ul>
+								<li>1024 x 768</li>
+								<li>1152 x 1028</li>
+								<li>1620 x 1280</li>
+							</ul>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="page_sixth" class="page js-page" style="background-image: url(img/page5.jpg)">
+		<div class="l-center">
+			<div class="title">BUY NOW</div>
+			<div class="page__in">
+				<div class="buy">
+					<div class="buy__copy">
+						<div class="title">GET YOUR COPY</div>
+						<ul class="buy__list">
+							<li><a href="#"><i class="buy__amazon"></i></a></li>
+							<li><a href="#"><i class="buy__walmart"></i></a></li>
+						</ul>
+					</div>
+					<div class="buy__digital">
+						<div class="title">DIGITAL</div>
+						<ul class="buy__list">
+							<li><a href="#"><i class="buy__itunes"></i></a></li>
+							<li><a href="#"><i class="buy__spotify"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-<!-- END out-->
-
+<footer class="footer">
+	<div class="l-center">
+		<div class="share">
+			<span>SHARE</span>
+			<ul>
+				<li><a class="share__tw" href="#"></a></li>
+				<li><a class="share__fb" href="#"></a></li>
+				<li><a class="share__gp" href="#"></a></li>
+			</ul>
+		</div>
+		<div class="site">
+			<a href="#">SITE BY WORKFILMS</a>
+		</div>
+		<div class="link-official">
+			<a href="#">GO TO ENRIQUEIGLESIAS.COM</a>
+		</div>
+	</div>
+</footer>
 </body>
 </html>

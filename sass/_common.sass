@@ -39,11 +39,392 @@
 // +font(book, cytiapro-black-webfont)  
 // =book
 // 	font-family: "book",arial,sans-serif 
+
+$yl: #d8af12 
 	
 body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
+	min-width: 940px
+	min-height: 768px !important
+	font-family: 'Lato', Arial, sans-serif
+	font-weight: 700 
 	line-height: 1.4
-
+	font-size: 14px 
+	color: #fff
+a
+	color: #FFF
+	text-decoration: none 
+button
+	background: none
+	color: #FFF  
+	font-size: 14px
 
 // common blocks
+.page
+	position: relative
+	+cover
+	background-attachment: fixed
+.page__in
+	display: table-cell
+	width: 940px
+	padding-top: 120px
+	text-align: center
+	vertical-align: middle
+
+.l-center
+	width: 940px
+	margin: 0 auto
+	>.title
+		position: absolute
+		top: 120px
+		left: 0
+		right: 0
+		margin: 0
+		text-align: center
+.l-center_mod
+	position: absolute
+	left: 50%
+	bottom: 80px
+	margin-left: -470px
+	
+.title
+	margin-bottom: 20px
+	font-size: 24px
+	text-transform: uppercase
+
+
+
+.header
+	position: fixed
+	top: 0
+	left: 0
+	right: 0
+	background: rgba(0,0,0,.43) 
+	z-index: 100 
+	.l-center
+		height: 90px
+.logo
+	float: left
+	margin-top: 23px
+	+hidetext
+	+s(logo)
+.nav
+	float: right
+	margin-top: 25px
+	li
+		float: left
+		margin-left: -1px
+	button
+		padding: 7px 20px
+		border: 1px solid transparent
+		text-transform: uppercase
+		+tr(all .2s linear)
+		&:hover
+			border-color: $yl
+			color: $yl
+		&.is-active
+			color: #636363 
+			border-color: transparent
+			cursor: default
+
+.main
+	img
+		margin-bottom: 50px		
+
+.links
+	+clr
+	li
+		float: left
+		margin-right: 10px
+	a
+		display: block
+		width: 195px
+		padding: 7px 0
+		border: 5px solid #fff
+		text-align: center
+		font-size: 18px
+		text-transform: uppercase
+		+tr(all .2s linear)
+		&:hover
+			background: #FFF
+			color: #000  
+
+
+.tracklist
+	display: inline-block
+	width: 530px
+	vertical-align: middle
+	li
+		&.is-active
+			a
+				
+	a
+		position: relative
+		display: block
+		padding: 8px 50px
+		border: 1px solid transparent
+		font-weight: 300 
+		+tr(border-color .2s linear)
+		&:after
+			content: ""
+			position: absolute
+			top: 10px
+			right: 20px
+			opacity: 0 
+			+s(arr) 
+			+tr(opacity .2s linear)
+		&:hover
+			border-color: $yl
+			&:after
+				opacity: 1 
+
+
+
+.videos
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	>a
+		position: absolute
+		width: 50%
+		height: 50%
+		+cover
+		+gpu
+		overflow: hidden
+		&:hover
+			.title
+				+scale(1.2)
+	.title
+		position: absolute
+		top: 50%
+		left: 0
+		right: 0
+		margin: -25px 0 0 0
+		padding-top: 30px
+		text-align: center
+		+tr(all .2s linear)
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 50%
+			margin-left: -6px
+			+s(arr)
+.videos__item-1
+	top: 0
+	left: 0
+.videos__item-2
+	top: 0
+	left: 50%
+.videos__item-3
+	top: 50%
+	left: 0
+.videos__item-4
+	top: 50%
+	left: 50%
+
+
+.lyrics
+	position: relative
+	display: inline-block
+	width: 700px
+	text-align: left
+	vertical-align: middle
+.lyrics__songs
+	width: 350px
+	font-weight: 300 
+	li
+		padding: 8px 30px
+		cursor: pointer
+		+tr(all .2s linear)
+		&:hover
+			background: rgba(255,255,255,.5) 
+			color: #000 
+		&.is-active
+			background: #FFF
+			color: #000  
+			cursor: default
+.lyrics__text
+	position: absolute
+	top: 0
+	right: 0
+	left: 350px
+	bottom: 0
+	padding: 30px 30px 60px
+	background: #FFF 
+.lyrics__text-in
+	position: absolute
+	top: 30px
+	right: 30px
+	bottom: 30px
+	left: 30px
+	color: #000 
+.lyrics__text-item
+	.content
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 30px
+		left: 0
+		overflow: hidden
+.content
+	p
+		font-weight: 300
+	strong
+		font-weight: 400 
+.lyrics__text-up, .lyrics__text-down
+	position: absolute
+	bottom: -10px
+	opacity: .3
+	+tr(opacity .2s linear)
+	&:hover
+		opacity: 1 
+.lyrics__text-up
+	right: 50px
+	+s(lyrics-arr-top)
+.lyrics__text-down
+	right: 0
+	+s(lyrics-arr-down)
+
+
+
+.wallpapers
+	font-size: 0
+	>li
+		position: relative
+		display: inline-block
+		width: 230px
+		height: 170px 
+		margin: 7px
+		vertical-align: top
+		overflow: hidden
+		&:hover
+			ul
+				+scale(1)
+				opacity: 1 
+	img
+		position: absolute
+		top: 0
+		left: 0
+	ul
+		position: relative
+		display: table-cell
+		width: 230px
+		height: 169px
+		background: rgba(86,51,18,.76)
+		border-bottom: 1px solid $yl
+		vertical-align: middle
+		font-size: 14px
+		+tr(all .2s linear)
+		+scale(1.4)
+		opacity: 0 
+		z-index: 2 
+		li
+			margin: 2px 0
+
+
+
+.buy
+	display: inline-block
+	width: 940px
+	+clr
+.buy__copy, .buy__digital
+	float: left
+	width: 460px
+	.title
+		margin-bottom: 60px 
+		font-size: 14px
+.buy__copy	
+	margin-right: 20px
+.buy__list
+	li
+		margin-bottom: 15px
+	a
+		position: relative
+		display: table-cell
+		width: 460px
+		height: 80px 
+		background: #000
+		vertical-align: middle
+		&:before
+			content: ""
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			height: 2px
+			background: transparent 
+			+tr(all .2s linear)
+		&:hover
+			&:before
+				background: $yl 
+	i
+		display: inline-block
+		vertical-align: middle
+.buy__amazon
+	+s(amazon)
+.buy__walmart
+	+s(walmart)
+.buy__itunes
+	+s(itunes)
+.buy__spotify
+	+s(spotify)
+
+
+.footer
+	position: fixed
+	left: 0
+	right: 0
+	bottom: 0
+	padding: 12px 0
+	background: #000 
+	font-weight: 700 
+	z-index: 100 
+	.l-center
+		+clr
+.share
+	float: left
+	span, ul, li
+		float: left
+	li
+		margin-left: 20px
+	span
+		text-transform: uppercase
+		color: #696969
+		font-size: 11px 
+	a
+		display: block
+		opacity: 1
+		+tr(opacity .2s linear) 
+		&:hover
+			opacity: .5
+.share__tw
+	+s(tw)
+.share__fb
+	+s(fb)
+.share__gp
+	+s(gp)
+.site
+	float: right
+.link-official
+	margin: 0 300px
+	text-align: center
+.link-official, .site
+	a
+		border-bottom: 1px solid transparent
+		padding-bottom: 2px
+		+tr(border-color .2s linear)
+		text-transform: uppercase
+		font-size: 11px
+		color: #696969 
+		&:hover
+			border-color: $yl 
+
+
+
+
+
+
+
+
