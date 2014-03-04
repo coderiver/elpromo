@@ -39,6 +39,11 @@
 // +font(book, cytiapro-black-webfont)  
 // =book
 // 	font-family: "book",arial,sans-serif 
+@mixin rt($media)
+	@if $media == 768
+		@media only screen and (max-height: 768px)
+			@content
+
 
 $yl: #d8af12 
 	
@@ -161,14 +166,18 @@ button
 		position: relative
 		display: block
 		padding: 8px 50px
+		margin-bottom: -1px
 		border: 1px solid transparent
 		font-weight: 300 
 		+tr(border-color .2s linear)
+		+rt(768)
+			padding: 1px 50px
 		&:after
 			content: ""
 			position: absolute
-			top: 10px
+			top: 50%
 			right: 20px
+			margin-top: -8px
 			opacity: 0 
 			+s(arr) 
 			+tr(opacity .2s linear)
@@ -192,7 +201,19 @@ button
 		+cover
 		+gpu
 		overflow: hidden
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			bottom: 0
+			background: rgba(0,0,0,.5)
+			+tr(background .2s linear)
+			z-index: 2 
 		&:hover
+			&:before
+				background: rgba(0,0,0,0)
 			.title
 				+scale(1.2)
 	.title
@@ -204,6 +225,7 @@ button
 		padding-top: 30px
 		text-align: center
 		+tr(all .2s linear)
+		z-index: 4 
 		&:before
 			content: ""
 			position: absolute
@@ -238,6 +260,8 @@ button
 		padding: 8px 30px
 		cursor: pointer
 		+tr(all .2s linear)
+		+rt(768)
+			padding: 2px 30px
 		&:hover
 			background: rgba(255,255,255,.5) 
 			color: #000 

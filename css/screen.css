@@ -56,15 +56,18 @@ button { background: none; color: white; font-size: 14px; }
 .links a:hover { background: white; color: black; }
 
 .tracklist { display: inline-block; width: 530px; vertical-align: middle; }
-.tracklist a { position: relative; display: block; padding: 8px 50px; border: 1px solid transparent; font-weight: 300; -webkit-transition: border-color 0.2s linear; -moz-transition: border-color 0.2s linear; -o-transition: border-color 0.2s linear; transition: border-color 0.2s linear; }
-.tracklist a:after { content: ""; position: absolute; top: 10px; right: 20px; opacity: 0; background: url('../img/icons-sf3197f065e.png') 0 -386px no-repeat; width: 13px; height: 15px; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; -o-transition: opacity 0.2s linear; transition: opacity 0.2s linear; }
+.tracklist a { position: relative; display: block; padding: 8px 50px; margin-bottom: -1px; border: 1px solid transparent; font-weight: 300; -webkit-transition: border-color 0.2s linear; -moz-transition: border-color 0.2s linear; -o-transition: border-color 0.2s linear; transition: border-color 0.2s linear; }
+@media only screen and (max-height: 768px) { .tracklist a { padding: 1px 50px; } }
+.tracklist a:after { content: ""; position: absolute; top: 50%; right: 20px; margin-top: -8px; opacity: 0; background: url('../img/icons-sf3197f065e.png') 0 -386px no-repeat; width: 13px; height: 15px; -webkit-transition: opacity 0.2s linear; -moz-transition: opacity 0.2s linear; -o-transition: opacity 0.2s linear; transition: opacity 0.2s linear; }
 .tracklist a:hover { border-color: #d8af12; }
 .tracklist a:hover:after { opacity: 1; }
 
 .videos { position: absolute; top: 0; left: 0; right: 0; bottom: 0; }
 .videos > a { position: absolute; width: 50%; height: 50%; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; -webkit-transform: translate3d(0, 0, 0); -moz-transform: translate3d(0, 0, 0); -ms-transform: translate3d(0, 0, 0); -o-transform: translate3d(0, 0, 0); transform: translate3d(0, 0, 0); overflow: hidden; }
+.videos > a:before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); -webkit-transition: background 0.2s linear; -moz-transition: background 0.2s linear; -o-transition: background 0.2s linear; transition: background 0.2s linear; z-index: 2; }
+.videos > a:hover:before { background: rgba(0, 0, 0, 0); }
 .videos > a:hover .title { -webkit-transform: scale(1.2, 1.2); -moz-transform: scale(1.2, 1.2); -ms-transform: scale(1.2, 1.2); -o-transform: scale(1.2, 1.2); transform: scale(1.2, 1.2); }
-.videos .title { position: absolute; top: 50%; left: 0; right: 0; margin: -25px 0 0 0; padding-top: 30px; text-align: center; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+.videos .title { position: absolute; top: 50%; left: 0; right: 0; margin: -25px 0 0 0; padding-top: 30px; text-align: center; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; z-index: 4; }
 .videos .title:before { content: ""; position: absolute; top: 0; left: 50%; margin-left: -6px; background: url('../img/icons-sf3197f065e.png') 0 -386px no-repeat; width: 13px; height: 15px; }
 
 .videos__item-1 { top: 0; left: 0; }
@@ -79,6 +82,7 @@ button { background: none; color: white; font-size: 14px; }
 
 .lyrics__songs { width: 350px; font-weight: 300; }
 .lyrics__songs li { padding: 8px 30px; cursor: pointer; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
+@media only screen and (max-height: 768px) { .lyrics__songs li { padding: 2px 30px; } }
 .lyrics__songs li:hover { background: rgba(255, 255, 255, 0.5); color: black; }
 .lyrics__songs li.is-active { background: white; color: black; cursor: default; }
 
