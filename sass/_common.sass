@@ -68,6 +68,18 @@ button
 	position: relative
 	+cover
 	background-attachment: fixed
+	&.is-scrolltop
+		.l-center
+			>.title
+				left: 0
+				opacity: 1 
+		.tracklist, .lyrics, .buy, .wallpapers
+			left: 0
+			opacity: 1 
+		.videos
+			.title
+				left: 0
+				opacity: 1 
 .page__in
 	display: table-cell
 	width: 940px
@@ -81,9 +93,11 @@ button
 	>.title
 		position: absolute
 		top: 120px
-		left: 0
+		left: 200px
 		right: 0
 		margin: 0
+		opacity: 0
+		+tr(all .2s ease-out) 
 		text-align: center
 .l-center_mod
 	position: absolute
@@ -154,14 +168,19 @@ button
 			color: #000  
 
 
+.tracklist, .lyrics, .buy, .wallpapers
+	position: relative
+	left: -200px
+	opacity: 0 
+	+tr(all .2s ease-out)
+
+
 .tracklist
 	display: inline-block
 	width: 530px
 	vertical-align: middle
-	li
-		&.is-active
-			a
-				
+	+tr(all .2s linear)
+	opacity: 0 
 	a
 		position: relative
 		display: block
@@ -219,12 +238,14 @@ button
 	.title
 		position: absolute
 		top: 50%
-		left: 0
+		left: -200px
 		right: 0
 		margin: -25px 0 0 0
 		padding-top: 30px
 		text-align: center
 		+tr(all .2s linear)
+		overflow: hidden
+		opacity: 0 
 		z-index: 4 
 		&:before
 			content: ""
@@ -239,16 +260,21 @@ button
 .videos__item-2
 	top: 0
 	left: 50%
+	.title
+		+transition-delay(.2s)
 .videos__item-3
 	top: 50%
 	left: 0
+	.title
+		+transition-delay(.4s)
 .videos__item-4
 	top: 50%
 	left: 50%
+	.title
+		+transition-delay(.6s)
 
 
 .lyrics
-	position: relative
 	display: inline-block
 	width: 700px
 	text-align: left

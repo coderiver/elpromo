@@ -11,13 +11,12 @@ function sizer () {
 }
 sizer();
 
-
 wnd.resize(function(){
 	sizer();
 });
 
 //nav
-function nav() {
+function nav () {
 	var el = $('.js-nav');
 	btn = el.find('button');
 	btn.on('click', function(){
@@ -29,7 +28,7 @@ function nav() {
 }
 nav();
 
-function nav_scroll() {
+function nav_scroll () {
 	var offset_top = $(window).scrollTop();
 	var item_scroll = $('.js-page');
 	item_scroll.each(function(){		
@@ -44,6 +43,13 @@ function nav_scroll() {
 					$(this).addClass('is-active');
 				};
 			});
+		};
+		var wnd_height = wnd.height();
+		if (offset_top >= (item_scroll_top + wnd_height/2)) {
+			$(this).next().addClass('is-scrolltop');
+		}
+		else {
+			$(this).next().removeClass('is-scrolltop');
 		};
 	});
 }
