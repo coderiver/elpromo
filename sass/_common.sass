@@ -46,7 +46,8 @@
 
 
 $yl: #d8af12 
-	
+html
+	height: 100% 
 body
 	min-width: 940px
 	min-height: 768px !important
@@ -69,6 +70,13 @@ button
 	position: relative
 	+cover
 	background-attachment: fixed
+	//background-repeat: no-repeat
+	+ipad
+		background-attachment: scroll
+		background-position: 0 0 !important 
+	+ipad-retina 
+		background-attachment: scroll
+		background-position: 0 0 !important 
 	&.is-scrolltop
 		.l-center
 			>.title
