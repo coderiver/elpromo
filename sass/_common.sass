@@ -138,6 +138,10 @@ button
 .nav
 	float: right
 	margin-top: 25px
+	font-family: 'Gotham SSm 4r','Gotham SSm A','Gotham SSm B',sans-serif
+	font-weight: 400
+	font-style: normal
+	color: #808080
 	li
 		float: left
 		margin-left: -1px
@@ -146,11 +150,14 @@ button
 		border: 1px solid transparent
 		text-transform: uppercase
 		+tr(all .2s linear)
+		font-size: 14px 
+		color: #808080
 		&:hover
 			border-color: $yl
 			color: $yl
 		&.is-active
 			color: #636363 
+			color: #fff 
 			border-color: transparent
 			cursor: default
 
@@ -469,6 +476,12 @@ button
 .link-official
 	margin: 0 300px
 	text-align: center
+	i
+		display: inline-block
+		vertical-align: middle
+		+s(smallogo)
+		margin-left: 40px 
+		opacity: .5 
 .link-official, .site
 	a
 		border-bottom: 1px solid transparent
