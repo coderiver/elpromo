@@ -18,11 +18,11 @@ wnd.resize(function(){
 //nav
 function nav () {
 	var el = $('.js-nav');
-	btn = el.find('button');
+	btn = el.find('a');
 	btn.on('click', function(){
-		var attr = $(this).attr('data-item');
-		var top = $('#'+attr).offset().top;
-		$('body').animate({scrollTop: top}, 500);			
+		var attr = $(this).attr('href');
+		var top = $(''+attr).offset().top;
+		$('html, body').animate({scrollTop: top}, 500);			
 		return false;
 	});	
 }
@@ -35,9 +35,10 @@ function nav_scroll () {
 		var item_scroll_top = $(this).offset().top;
 		if (offset_top >= item_scroll_top) {
 			var item_el = $(this).attr('id');
-			var link_el = $('.js-nav button');
+			item_el = '#' + item_el;
+			var link_el = $('.js-nav a');
 			link_el.each(function(){	
-				var link_item = $(this).attr('data-item');
+				var link_item = $(this).attr('href');
 				if (item_el == link_item) {
 					link_el.removeClass('is-active');
 					$(this).addClass('is-active');

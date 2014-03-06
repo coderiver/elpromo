@@ -27,7 +27,7 @@ a { color: white; text-decoration: none; }
 
 button { background: none; color: white; font-size: 14px; }
 
-.page { position: relative; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; }
+.page { position: relative; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; background-attachment: fixed; overflow: hidden; }
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 1) { .page { background-attachment: scroll; background-position: 0 0 !important; } }
 @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) { .page { background-attachment: scroll; background-position: 0 0 !important; } }
 .page.is-scrolltop .l-center > .title { left: 0; opacity: 1; }
@@ -43,16 +43,16 @@ button { background: none; color: white; font-size: 14px; }
 
 .title { margin-bottom: 20px; font-size: 24px; text-transform: uppercase; }
 
-.header { position: fixed; top: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.43); z-index: 100; }
+.header { position: fixed; top: 0; left: 0; right: 0; background: black; background: rgba(0, 0, 0, 0.43); z-index: 100; }
 .header .l-center { height: 90px; }
 
 .logo { float: left; margin-top: 23px; font: 0/0 a; text-shadow: none; color: transparent; background: url('../img/icons-s33c3250d24.png') 0 0 no-repeat; width: 288px; height: 28px; }
 
 .nav { float: right; margin-top: 25px; font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", sans-serif; font-weight: 400; font-style: normal; color: gray; }
 .nav li { float: left; margin-left: -1px; }
-.nav button { padding: 7px 20px; border: 1px solid transparent; text-transform: uppercase; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; font-size: 14px; color: gray; }
-.nav button:hover { border-color: #d8af12; color: #d8af12; }
-.nav button.is-active { color: #636363; color: white; border-color: transparent; cursor: default; }
+.nav a { display: inline-block; padding: 5px 18px; border: 1px solid transparent; text-transform: uppercase; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; font-size: 14px; color: gray; }
+.nav a:hover { border-color: #d8af12; color: #d8af12; }
+.nav a.is-active { color: #636363; color: white; border-color: transparent; cursor: default; }
 
 .main img { margin-bottom: 50px; }
 
@@ -114,8 +114,9 @@ button { background: none; color: white; font-size: 14px; }
 
 .lyrics__text-down { right: 0; background: url('../img/icons-s33c3250d24.png') 0 -441px no-repeat; width: 41px; height: 23px; }
 
-.wallpapers { font-size: 0; }
-.wallpapers > li { position: relative; display: inline-block; width: 230px; height: 170px; margin: 7px; vertical-align: top; overflow: hidden; }
+.wallpapers { width: 750px; margin: 0 auto; *zoom: 1; }
+.wallpapers:after { content: " "; display: table; clear: both; }
+.wallpapers > li { position: relative; float: left; width: 230px; height: 170px; margin: 10px; vertical-align: top; overflow: hidden; }
 .wallpapers > li:hover ul { -webkit-transform: scale(1, 1); -moz-transform: scale(1, 1); -ms-transform: scale(1, 1); -o-transform: scale(1, 1); transform: scale(1, 1); opacity: 1; }
 .wallpapers img { position: absolute; top: 0; left: 0; }
 .wallpapers ul { position: relative; display: table-cell; width: 230px; height: 169px; background: rgba(86, 51, 18, 0.76); border-bottom: 1px solid #d8af12; vertical-align: middle; font-size: 14px; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; -webkit-transform: scale(1.4, 1.4); -moz-transform: scale(1.4, 1.4); -ms-transform: scale(1.4, 1.4); -o-transform: scale(1.4, 1.4); transform: scale(1.4, 1.4); opacity: 0; z-index: 2; }
@@ -163,7 +164,7 @@ button { background: none; color: white; font-size: 14px; }
 .site { float: right; }
 
 .link-official { margin: 0 300px; text-align: center; }
-.link-official i { display: inline-block; vertical-align: middle; background: url('../img/icons-s33c3250d24.png') 0 -252px no-repeat; width: 70px; height: 40px; margin-left: 40px; opacity: 0.5; }
+.link-official i { display: inline-block; vertical-align: top; background: url('../img/icons-s33c3250d24.png') 0 -252px no-repeat; width: 70px; height: 40px; margin-left: 40px; opacity: 0.5; }
 
 .link-official a, .site a { border-bottom: 1px solid transparent; padding-bottom: 2px; -webkit-transition: border-color 0.2s linear; -moz-transition: border-color 0.2s linear; -o-transition: border-color 0.2s linear; transition: border-color 0.2s linear; text-transform: uppercase; font-size: 11px; color: dimgrey; }
 .link-official a:hover, .site a:hover { border-color: #d8af12; }
