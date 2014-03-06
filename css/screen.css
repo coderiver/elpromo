@@ -21,7 +21,7 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
 html { height: 100%; }
 
-body { min-width: 940px; min-height: 768px !important; font-family: "Gotham SSm A"; font-weight: 700; line-height: 1.4; font-size: 14px; color: white; background: #1e130d; }
+body { min-width: 940px; min-height: 768px !important; font-family: "Gotham SSm 4r", "Gotham SSm A", "Gotham SSm B", sans-serif; font-weight: 700; line-height: 1.4; font-size: 14px; color: white; background: #1e130d; }
 
 a { color: white; text-decoration: none; }
 
@@ -130,7 +130,7 @@ button { background: none; color: white; font-size: 14px; }
 
 .buy__copy { margin-right: 20px; }
 
-.buy__list li { margin-bottom: 15px; }
+.buy__list li { position: relative; margin-bottom: 15px; }
 .buy__list a { position: relative; display: table-cell; width: 460px; height: 80px; background: black; vertical-align: middle; }
 .buy__list a:before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: transparent; -webkit-transition: all 0.2s linear; -moz-transition: all 0.2s linear; -o-transition: all 0.2s linear; transition: all 0.2s linear; }
 .buy__list a:hover:before { background: #d8af12; }
