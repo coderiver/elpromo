@@ -98,7 +98,8 @@ button { background: none; color: white; font-size: 14px; }
 .lyrics__songs li:hover { background: rgba(255, 255, 255, 0.5); color: black; }
 .lyrics__songs li.is-active { background: white; color: black; cursor: default; }
 
-.lyrics__text { position: absolute; top: 0; right: 0; left: 350px; bottom: 0; padding: 30px 30px 60px; background: white; }
+.lyrics__text { position: absolute; top: 0; right: 0; left: 350px; height: 380px; padding: 30px 30px 60px; background: white; }
+.lyrics__text .content p { line-height: 19px; }
 
 .lyrics__text-in { position: absolute; top: 30px; right: 30px; bottom: 30px; left: 30px; color: black; }
 
