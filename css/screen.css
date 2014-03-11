@@ -100,6 +100,7 @@ button { background: none; color: white; font-size: 14px; }
 
 .lyrics__text { position: absolute; top: 0; right: 0; left: 350px; height: 380px; padding: 30px 30px 60px; background: white; }
 .lyrics__text .content p { line-height: 19px; }
+@media only screen and (max-height: 768px) { .lyrics__text { height: 266px; } }
 
 .lyrics__text-in { position: absolute; top: 30px; right: 30px; bottom: 30px; left: 30px; color: black; }
 

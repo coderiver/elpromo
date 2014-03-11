@@ -79,10 +79,20 @@ function tabs() {
   var btn_scr_up = $('.lyrics__text-up');
   var btn_scr_down = $('.lyrics__text-down');
   btn_scr_up.on('click', function(){
-  	$(this).parent().find('.content').animate({scrollTop: "-=190px"}, 300);
+  	if (wnd.height() <= 768 ) {
+  		$(this).parent().find('.content').animate({scrollTop: "-=133px"}, 300);
+  	}
+  	else {
+		$(this).parent().find('.content').animate({scrollTop: "-=190px"}, 300);
+  	}
   });
   btn_scr_down.on('click', function(){
-  	$(this).parent().find('.content').animate({scrollTop: "+=190px"}, 300);
+  	if (wnd.height() <= 768 ) {
+  		$(this).parent().find('.content').animate({scrollTop: "+=133px"}, 300);
+  	}
+  	else {
+  		$(this).parent().find('.content').animate({scrollTop: "+=190px"}, 300);
+  	}
   });
 }
 tabs();
